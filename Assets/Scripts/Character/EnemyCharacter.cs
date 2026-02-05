@@ -38,6 +38,8 @@ namespace OmniumLessons
         
         public override void Update()
         {
+            AttackComponent?.OnUpdate();
+
             // Выполняем код в зависимости от состояния нашего простого ИИ
             // Наравне с if, один из способов проверки данных на определенные значения
             switch (_aiState)
@@ -54,8 +56,6 @@ namespace OmniumLessons
                     Attack();
                     return;
             }
-
-            AttackComponent.OnUpdate();
         }
 
         private void Move()

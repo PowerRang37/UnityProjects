@@ -11,11 +11,12 @@ namespace OmniumLessons
         [SerializeField] private float _defaultSpeed;
         [SerializeField] private Transform _characterTransform;
         [SerializeField] private CharacterController _characterController;
+        [SerializeField] public float AttackCooldown = 1f;
 
         // Ниже представлены свойство. Они похожи на переменные по своей сути.
         // Они управляют доступом к данным через методы get и set.
         // Также могут выполнять дополнительные действия при изменении или запросе данных.
-        
+
         // Полная форма написания свойства
         public float DefaultSpeed
         {

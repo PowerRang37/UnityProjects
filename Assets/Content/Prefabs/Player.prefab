@@ -183,6 +183,7 @@ MonoBehaviour:
   _defaultSpeed: 5
   _characterTransform: {fileID: 5193234670263575205}
   _characterController: {fileID: 1206353854922193894}
+  AttackCooldown: 1
 --- !u!114 &2587082133646911151
 MonoBehaviour:
   m_ObjectHideFlags: 0

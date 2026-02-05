@@ -6,7 +6,7 @@ namespace OmniumLessons
     {
         // Ключевое слово readonly говорит само за себя - запрет на дальнейшие изменения, только чтение.
         // В такую переменную невозможно что-либо записать, но всегда можно получить информацию.
-        private readonly int _lockDamageTimeMax = 1;
+        private float _lockDamageTimeMax => _characterData.AttackCooldown;
         private float _lockDamageTime = 0;
 
         private CharacterData _characterData;
